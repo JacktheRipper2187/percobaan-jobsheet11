@@ -14,10 +14,10 @@ public class NestedLoop22 {
             }
             System.out.println();
         }
-        for (int i = 0; i < temps.length; i++){
-            System.out.println("City: " + i);
-            for (int j = 0; j < temps[0].length; j++){
-                System.out.print(temps[i][j] + " ");
+
+        for (double[] cityTemps : temps) {
+            for (double temp : cityTemps) {
+                System.out.print(temp + " ");
             }
             System.out.println();
         }
