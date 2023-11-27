@@ -1,26 +1,22 @@
 import java.util.Scanner;
 
-public class Triangle22{
- public static void main(String[] args) {
-    Scanner sc = new Scanner(System.in);
+public class Triangle22 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
-    System.out.print("Masukkan nilai N: ");
-    int N = sc.nextInt();
+        System.out.print("Masukkan nilai N: ");
+        int N = sc.nextInt();
 
-    int i = 0;
-    while (i <= N ) {
-      int j = 0;
-      while (j < i) {
-         System.out.print("*");
-         j++;
-      }
-      i++;
+        int i = 0;
+        while (i < N) {
+            int j = 0;
+            while (j < i + 1) {
+                System.out.print("*");
+                j++;
+            }
+            System.out.println(); // Menambahkan baris baru setelah setiap baris bintang
+            i++;
+        }
     }
-
-
- }
-
 }
 
-
-    
